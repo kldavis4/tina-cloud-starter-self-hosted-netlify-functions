@@ -23,17 +23,27 @@
     "noFallthroughCasesInSwitch": true,
     "allowJs": true,
     "incremental": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
-    "src"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".forestry/types.ts",
+    ".forestry/config.ts",
+    ".next/types/**/*.ts"
   ],
   "references": [
     {
       "path": "./tsconfig.node.json"
     }
   ],
-  "exclude": [
-    "node_modules"
-  ]
 }
