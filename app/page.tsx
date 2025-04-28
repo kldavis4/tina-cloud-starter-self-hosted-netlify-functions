@@ -1,6 +1,6 @@
 import React from 'react'
-import { Page } from "../components/page";
-import { client } from "../tina/__generated__/databaseClient";
+import { Page } from "@/components/page";
+import { client } from "@/tina/__generated__/databaseClient";
 
 export default async function Home() {
   const res = await client.queries.page({ relativePath: "home.md" });
